@@ -11,11 +11,15 @@ header img {
 header span {
     font-size: 38px;
     color: rgb(255, 206, 10);
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     border-radius: 20px;
     box-shadow: #000 5px 6px 6px;
     max-width: 60%;
     text-align: center;
+}
+
+header a {
+    font-size: 28px !important;
 }
 
 .description {
@@ -36,7 +40,7 @@ header span {
 #description_title {
     color: #fff;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 48px;
     max-width: 60%;
     text-align: center;
 }
@@ -53,12 +57,13 @@ header span {
 
 .description_block_title {
     margin-bottom: 10px;
-    font-size: 22px;
+    font-size: 34px;
     color: #DDD;
 }
 
 .description_block_text {
     color: #BBB;
+    font-size: 28px;
 }
 
 @media screen and (max-width:767px) {
@@ -69,10 +74,30 @@ header span {
     header span {
         font-size: 28px;
     }
+
+    .description_block_title {
+        font-weight: 30px;
+    }
+
+    .description_block_text {
+        font-size: 24px;
+    }
 }
 
 @media screen and (max-width:420px) {
+    header a {
+        font-size: 24px !important;
+    }
+
     .description_block {
         width: 80%;
+    }
+
+    .description_block_title {
+        font-size: 26px;
+    }
+
+    .description_block_text {
+        font-size: 16px;
     }
 }

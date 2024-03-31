@@ -1,6 +1,6 @@
 
 * {
-    font-family: keroll !important;
+    font-family: hello-barbie !important;
 }
 
 .container {
@@ -19,6 +19,11 @@ nav > div {
 nav > div img {
     max-width: 50px;
     height: auto;
+}
+
+nav > div a {
+    font-size: 22px !important;
+    font-weight: 400 !important;
 }
 
 nav > div:first-child a:last-child {
@@ -40,6 +45,7 @@ footer {
 
 footer a {
     color: #666;
+    font-size: 22px;
 }
 
 @font-face {
