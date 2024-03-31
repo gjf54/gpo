@@ -18,6 +18,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/privacy_policy', function() {
+    return view('privacy_policy');
+})->name('privacy_policy');
+
+// contact form
+Route::get('/contact', function() {
+    return 0;
+});
+
+
 Route::group(['middleware' => 'auth'], function() {
     Route::get('/profile', [ProfileController::class, 'generate_profile_page']);
 });

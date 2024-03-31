@@ -54,7 +54,7 @@
         <div id="footer_separator"></div>
         <footer class="d-flex flex-row justify-content-around align-items-center">
             <a href="#">Term Of Use</a>
-            <a href="#">Privacy Policy</a>
+            <a href="{{ route('privacy_policy') }}">Privacy Policy</a>
             <a href="#">About Us</a>
         </footer>
     </div>
