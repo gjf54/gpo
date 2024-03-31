@@ -33,7 +33,7 @@
                 @if(auth()->user())
                     <a href="#">Profile</a>
                 @else
-                    <a href="#" class="btn btn-outline-warning">Log In</a>
+                    <a href="#" class="btn btn-outline-warning">Sign In</a>
                 @endif
             </div>
         </nav>
