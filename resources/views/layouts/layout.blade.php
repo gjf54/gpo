@@ -17,25 +17,15 @@
     body {
         background: url("{{ asset('imgs/layout/background.jpg') }}");
         background-repeat: no-repeat;
-        background-position: center center;
         background-attachment: fixed;
+        backdrop-filter: brightness(0.2);
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
     }
-    body:before {
-        background: url("{{ asset('imgs/layout/background.jpg') }}");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-        background-size: 100%;
-        content: "";
-        height: 100vh;
-        width: 100vw;
-        position: fixed;
-        filter: brightness(0.2);
-        z-index: -1;
+    body::before {
+        
     }
     @font-face {
         font-family: golden-ticket;
