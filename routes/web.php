@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\IssueController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 
@@ -21,11 +22,14 @@ Route::get('/', function () {
 Route::get('/privacy_policy', function() {
     return view('privacy_policy');
 })->name('privacy_policy');
+Route::get('/terms_of_use', function () {
+    return view('terms_of_use');
+})->name('terms_of_use');
 
-// contact form
 Route::get('/contact', function() {
-    return 0;
-});
+    return view('contact_form');
+})->name('contact_form');
+Route::post('/contact_form', [IssueController::class, 'create_issue'])->name('create_issue');
 
 
 Route::group(['middleware' => 'auth'], function() {

@@ -66,6 +66,30 @@ header a {
     font-size: 28px;
 }
 
+.description_block_text_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.description_block_language {
+    background-color: #000;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 100px;
+    margin-left: auto;
+}
+
+.description_block_language span {
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.description_block_language span[active] {
+    background: #15F;
+}
+
 @media screen and (max-width:767px) {
     header img {
         width: 95%;

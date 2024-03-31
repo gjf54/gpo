@@ -1,0 +1,18 @@
+* {
+    font-family: keroll !important;
+}
+
+form {
+    width: 80%;
+    border: 3px #B91 solid;
+    border-radius: 20px;
+    padding: 1.5em;
+    color: #FFF;
+    font-size: 24px !important;
+}
+
+form button {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
