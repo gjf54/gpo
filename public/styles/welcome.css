@@ -38,6 +38,7 @@ header span {
     font-weight: bold;
     font-size: 40px;
     max-width: 60%;
+    text-align: center;
 }
 
 .description_block {
@@ -67,5 +68,11 @@ header span {
 
     header span {
         font-size: 28px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .description_block {
+        width: 80%;
     }
 }

@@ -1,3 +1,8 @@
+
+* {
+    font-family: keroll !important;
+}
+
 .container {
     background-color: #111 !important;
     min-height: 100vh !important; 
@@ -35,6 +40,11 @@ footer {
 
 footer a {
     color: #666;
+}
+
+@font-face {
+    font-family: "thenies-bigbons" !important;
+    src: url('~font/thenies-bigbons.ttf') !important;
 }
 
 @media screen and (max-width:577px) {

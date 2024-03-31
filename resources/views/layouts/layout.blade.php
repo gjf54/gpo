@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ asset('styles/layouts/layout.css') }}">
     <style>
     * { margin: 0; padding: 0; }
     body {
@@ -13,12 +12,26 @@
         background-size: cover;
     }
     @font-face {
-        font-family: thenies-bigbons;
-        src: url("{{ public_path('fonts/thenies-bigbons.ttf') }}");
-        text-align: center;
-        max-width: 60%;
+        font-family: golden-ticket;
+        src: url("{{ asset('fonts/golden-ticket.ttf') }}") format('truetype');
     }
-</style>
+
+    @font-face {
+        font-family: hello-barbie;
+        src: url("{{ asset('fonts/hello-barbie-script.ttf') }}") format('truetype');
+    }
+
+    @font-face {
+        font-family: thenies-bigbons;
+        src: url("{{ asset('fonts/thenies-bigbons.ttf') }}") format('truetype');
+    }
+
+    @font-face {
+        font-family: keroll;
+        src: url("{{ asset('fonts/keroll.ttf') }}") format('truetype');
+    }
+    </style>
+    <link rel="stylesheet" href="{{ asset('styles/layouts/layout.css') }}">
     @yield('styles')
     <title>@yield('title')</title>
 </head>
