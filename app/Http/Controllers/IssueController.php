@@ -18,8 +18,10 @@ class IssueController extends Controller
             'issue' => 'required',
         ])->validate();
 
+        $notifiable = " ";
+
         $issue = Issue::create($request->all());
-        $issue->notify(new IssueNotify());
+        $issue->notify(new IssueNotify($notifiable));
         
 
         return back()->with('message', 'Issue successful created! We will send answer to Your e-mail.');
