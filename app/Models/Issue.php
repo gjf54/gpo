@@ -19,4 +19,9 @@ class Issue extends Model
         'topic',
         'issue',
     ];
+
+    public function routeNotificationFor($driver, $notification = null)
+    {
+        return $this->id;
+    }
 }
