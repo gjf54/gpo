@@ -22,7 +22,7 @@ class IssueController extends Controller
 
         $issue = Issue::create($request->all());
         // $issue->notify(new IssueNotify($notifiable));
-        Notification::send(Issue::class, new IssueNotify());
+        Notification::send(Issue::class, new IssueNotify($issue));
 
         return back()->with('message', 'Issue successful created! We will send answer to Your e-mail.');
     }
