@@ -15,17 +15,20 @@
     }
 
     body {
-        background: url("{{ asset('imgs/layout/background.jpg') }}");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        backdrop-filter: brightness(0.2);
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        position: relative;
     }
     body::before {
-        
+        background: url("{{ asset('imgs/layout/background.jpg') }}");
+        filter: brightness(0.2);
+        background-size: cover;
+        content: ' ';
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        will-change: transform;
+        z-index: -1;
     }
     @font-face {
         font-family: golden-ticket;
