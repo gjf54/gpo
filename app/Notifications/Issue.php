@@ -37,10 +37,19 @@ class Issue extends Notification implements DiscordNotificationContract
      */
     public function toDiscord($notifiable): array
     {
+        $embedBuilder = new EmbedBuilder();
+        $embedBuilder->addAuthor('Me!');
+
+        $componentBuilder = new ComponentBuilder();
+        $componentBuilder->addActionButton('My Button', 'customId');
+
         return [
-            'contentType' => 'plain',
+            'contentType' => 'rich',
             'channelId' => '1222923282219794493',
-            'message' => 'message content',
+            'embeds' => $embedBuilder->getEmbeds(),
+            'components' => [
+                $componentBuilder->getActionRow(),
+            ],
         ];
     }
 
