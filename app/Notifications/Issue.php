@@ -27,7 +27,7 @@ class Issue extends Notification implements DiscordNotificationContract
      *
      * @return array<int, string>
      */
-    public function via(object $notifiable): array
+    public function via($notifiable): array
     {
         return ['discord'];
     }
