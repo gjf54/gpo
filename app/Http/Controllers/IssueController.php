@@ -26,14 +26,14 @@ class IssueController extends Controller
             'embeds' => [
                 [
                     'username' => $request->name . ' ' . $request->last_name,
-                    'description' => $request->issue,
                     'fields' => [
                         [
-                            'name' => 'E-mail',
+                            'name' => 'E-mail: ',
                             'value' => $request->email,
-                            'inline' => False,
+                            'inline' => True,
                         ],
                     ],
+                    'description' => $request->issue,
                     'footer' => [
                         'text' => 'Date: '. Date::now(),
                     ]
