@@ -25,14 +25,14 @@ class IssueController extends Controller
             'content' => 'There is new issue!',
             'embeds' => [
                 [
-                    'author' => [
-                        'name' => $request->name . ' ' . $request->last_name,
-                    ],
+                    'username' => $request->name . ' ' . $request->last_name,
                     'description' => $request->issue,
                     'fields' => [
-                        'name' => 'E-mail',
-                        'value' => $request->email,
-                        'inline' => False,
+                        [
+                            'name' => 'E-mail',
+                            'value' => $request->email,
+                            'inline' => False,
+                        ],
                     ],
                     'footer' => [
                         'text' => 'Date: '. Date::now(),
