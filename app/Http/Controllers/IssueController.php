@@ -40,7 +40,7 @@ class IssueController extends Controller
                     ],
                     'author' => [
                         'name' => $request->name . ' ' . $request->last_name,
-                        'url' => 'https://mail.google.com/mail/?view=cm&to=' . $request->email . '&su=Answer on your issue: ' . $request->topic,
+                        'url' => 'https://mail.google.com/mail/?view=cm&to=' . $request->email . '&su=ArtelSupport&body=BODY&bcc=support@sacred-artel.ru',
                     ],
                 ]
             ],
