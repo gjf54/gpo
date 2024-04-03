@@ -34,8 +34,8 @@ class IssueController extends Controller
                             'inline' => True,
                         ],
                         [
-                            'name' => '**'. $request->topic .'**',
-                            'value' => '',
+                            'name' => 'Topic: ',
+                            'value' => '**'. $request->topic .'**',
                             'inline' => True,
                         ],
                     ],
