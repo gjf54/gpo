@@ -24,8 +24,11 @@ class IssueController extends Controller
         Http::post('https://discord.com/api/webhooks/1224763076394483844/FqAGxvwmfi1GGzE4Mf6gaEIrR4YRO91EVe817OQojHACEjMTGgQePXNyNj9R6DNTgQmq', [
             'content' => 'There is new issue!',
             'embeds' => [
-                [
-                    'username' => $request->name . ' ' . $request->last_name,
+                [   
+                    'author' => [
+                        'name' => $request->name . ' ' . $request->last_name,
+                    ],
+                    'title' => '**' . $request->topic . '**',
                     'color' => hexdec('BB1'),
                     'fields' => [
                         [
@@ -35,7 +38,7 @@ class IssueController extends Controller
                         ],
                         [
                             'name' => 'Topic: ',
-                            'value' => '**'. $request->topic .'**',
+                            
                             'inline' => True,
                         ],
                     ],
