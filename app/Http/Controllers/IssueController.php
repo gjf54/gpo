@@ -26,10 +26,16 @@ class IssueController extends Controller
             'embeds' => [
                 [
                     'username' => $request->name . ' ' . $request->last_name,
+                    'color' => hexdec('BB1'),
                     'fields' => [
                         [
                             'name' => 'E-mail: ',
                             'value' => $request->email,
+                            'inline' => True,
+                        ],
+                        [
+                            'name' => '**'. $request->topic .'**',
+                            'value' => '',
                             'inline' => True,
                         ],
                     ],
