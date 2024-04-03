@@ -33,11 +33,6 @@ class IssueController extends Controller
                             'value' => $request->email,
                             'inline' => True,
                         ],
-                        [
-                            'name' => 'Topic: ',
-                            
-                            'inline' => True,
-                        ],
                     ],
                     'description' => $request->issue,
                     'footer' => [
