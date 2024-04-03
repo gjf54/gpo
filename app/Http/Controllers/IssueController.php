@@ -24,8 +24,8 @@ class IssueController extends Controller
             'content' => 'There is new issue!',
             'embeds' => [
                 [
-                    'title' => 'Issue from '. $request->name,
-                    'description' => $request->issue,
+                    'title' => 'Issue from '. $request->name . ' ' . $request->last_name,
+                    'description' => $request->issue . '\n' . '**E-mail: '. $request->email .'**',
                 ]
             ],
         ]);
