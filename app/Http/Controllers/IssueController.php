@@ -40,7 +40,7 @@ class IssueController extends Controller
                     ],
                     'author' => [
                         'name' => $request->name . ' ' . $request->last_name,
-                        'url' => 'https://mail.google.com/mail/u/' . $request->email,
+                        'url' => 'https://mail.google.com/u/' . $request->email . '/mail/#compose',
                     ],
                 ]
             ],
