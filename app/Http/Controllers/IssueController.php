@@ -40,7 +40,7 @@ class IssueController extends Controller
                     ],
                     'author' => [
                         'name' => $request->name . ' ' . $request->last_name,
-                        'url' => 'https://mail.google.com/mail/?view=cm&to=' . $request->email . '&su=ArtelSupport',
+                        'url' => 'https://mail.google.com/mail/?view=cm&to=' . $request->email . '&su=Artel-Support',
                     ],
                 ]
             ],
