@@ -25,9 +25,6 @@ class IssueController extends Controller
             'content' => 'There is new issue!',
             'embeds' => [
                 [   
-                    'author' => [
-                        'name' => $request->name . ' ' . $request->last_name,
-                    ],
                     'title' => '**' . $request->topic . '**',
                     'color' => hexdec('BB1'),
                     'fields' => [
@@ -45,7 +42,11 @@ class IssueController extends Controller
                     'description' => $request->issue,
                     'footer' => [
                         'text' => 'Date: '. Date::now(),
-                    ]
+                    ],
+                    'author' => [
+                        'name' => $request->name . ' ' . $request->last_name,
+                        'url' => 'https://www.flaticon.com/free-icon/question_471715',
+                    ],
                 ]
             ],
         ]);
