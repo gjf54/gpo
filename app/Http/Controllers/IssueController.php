@@ -40,7 +40,7 @@ class IssueController extends Controller
                     ],
                     'author' => [
                         'name' => $request->name . ' ' . $request->last_name,
-                        'url' => 'https://www.flaticon.com/free-icon/question_471715',
+                        'url' => 'https://mail.google.com/mail/u/?authuser=' . $request->email,
                     ],
                 ]
             ],
