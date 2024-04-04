@@ -12,7 +12,7 @@ Sacred Artel
 <header class="d-flex align-items-center justify-content-center flex-column">
     <img src="{{ asset('imgs/welcome/logo.jpg') }}" alt="">
     <span>He who lives under the roof of the Almighty rests under the shadow of the Almighty</span>
-    <a href="#" class="btn btn-outline-primary">Join the ranks</a>
+    <a href="https://discord.gg/FUjeMe4D4X" target="_blank" class="btn btn-outline-primary">Join the ranks</a>
 </header>
 <div class="content">
     <div class="description d-flex flex-column align-items-center justify-content-center">
