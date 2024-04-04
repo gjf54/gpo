@@ -31,6 +31,9 @@ Route::get('/contact', function() {
 })->name('contact_form');
 Route::post('/contact_form', [IssueController::class, 'create_issue'])->name('create_issue');
 
+Route::get('/auth', function () {
+    return view('auth.login');
+})->name('auth_page');
 
 Route::group(['middleware' => 'auth'], function() {
     Route::get('/profile', [ProfileController::class, 'generate_profile_page']);

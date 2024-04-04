@@ -66,7 +66,7 @@
                 @if(auth()->user())
                     <a href="#">Profile</a>
                 @else
-                    <a href="#" class="btn btn-outline-warning">Sign In</a>
+                    <a href="{{ route('auth_page') }}" class="btn btn-outline-warning">Sign In</a>
                 @endif
             </div>
         </nav>
