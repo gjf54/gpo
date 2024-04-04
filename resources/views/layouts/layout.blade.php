@@ -66,7 +66,7 @@
                 @if(auth()->user())
                     <a href="#">Profile</a>
                 @else
-                    <a href="#" class="btn btn-outline-warning">Sign In</a>
+                    <a href="https://discord.gg/FUjeMe4D4X" target="_blank" class="btn btn-outline-warning">Sign In</a>
                 @endif
             </div>
         </nav>
