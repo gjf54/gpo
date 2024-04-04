@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ asset('imgs/layout/icon.ico') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css" rel="stylesheet" />
@@ -58,7 +59,7 @@
     <div class="container">
         <nav class="d-flex flex-direction-row justify-content-center">
             <div class="d-flex align-items-center">
-                <a href="#"><img src="{{ asset('imgs/welcome/discord.jpg') }}" alt="Discord"></a>
+                <a href="https://discord.gg/FUjeMe4D4X" target="_blank"><img src="{{ asset('imgs/welcome/discord.jpg') }}" alt="Discord"></a>
                 <a href="{{ route('contact_form') }}"><img src="{{ asset('imgs/welcome/mail.jpg') }}" alt="Contact Us"></a>
             </div>
             <div class="d-flex align-items-center justify-content-end">
