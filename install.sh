@@ -1,9 +1,9 @@
 #!/bin/bash
 set -euo pipefail
 
-REPO_URL="https://github.com/gjf54/weibulla-gnedenko-model"
+REPO_URL="https://github.com/gjf54/gpo"
 BRANCH="main"
-PROJECT_DIR="/opt/weibull"
+PROJECT_DIR="/opt/sacred-artel"
 
 GREEN='\033[0;32m'
 RED='\033[0;31m'
