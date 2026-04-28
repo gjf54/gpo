@@ -33,7 +33,7 @@ storage-link:
 	$(EXEC_PHP) php artisan storage:link
 
 set-env:
-	$(EXEC_PHP) cp .env.example .env
+	cp .env.example .env
 
 set-overrides:
 	cp docker-compose.override.yml.dist docker-compose.override.yml
