@@ -39,6 +39,7 @@ Sacred Artel
                     <span class="description_block_text">8. "Don't steal."</span>
                     <span class="description_block_text">9. "Do not perjure yourself." </span>
                     <span class="description_block_text">10. "Don't wish for anything else."</span>
+                    <span class="description_block_text">11. "You cant delete gif-files of Gorobtsov Yuriy Viktorovich."</span>
                 </div>
                 <div class="description_block_text_container" id="he-text">
                     <span class="description_block_title">מצוות האל</span>
@@ -52,6 +53,7 @@ Sacred Artel
                     <span class="description_block_text">8. "אל תגנוב." </span>
                     <span class="description_block_text">9. "אל תעיד שקר." </span>
                     <span class="description_block_text">10. "אל תאחל לשום דבר זר."</span>
+                    <span class="description_block_text">11. "אתה לא יכול למחוק קבצי גיף של גורובצוב יורי ויקטורוביץ'."</span>
                 </div>
             </div>
         </div>

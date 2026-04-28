@@ -1,0 +1,7 @@
+services:
+  nginx:
+    ports:
+      - '8095:80'
+  mysql:
+    ports:
+      - '3316:3306'
