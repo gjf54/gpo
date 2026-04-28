@@ -1,5 +1,5 @@
 DOCKER_COMPOSE = docker compose
-EXEC_PHP = $(DOCKER_COMPOSE) exec php
+EXEC_PHP = $(DOCKER_COMPOSE) exec -it php
 EXEC_MYSQL = $(DOCKER_COMPOSE) exec mysql
 
 .PHONY: migrate docker-down docker-up docker-down-force composer-install storage-link
